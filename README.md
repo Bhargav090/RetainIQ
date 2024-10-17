@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Dynamic Table with Variant Management
+A React-based dynamic table interface for managing product variants. This project allows users to manage product variants with features like drag-and-drop rows, image uploads, and filter management.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- Dynamic variant column management
+- Drag and drop row reordering
+- Image upload for variants
+- Product filter management
+- Add/delete rows and variants
+- Interactive UI with modern design
 
-## Available Scripts
+## Prerequisites
+Before you begin, ensure you have installed:
+- [Node.js](https://nodejs.org/) (version 14.0 or higher)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+1. **Clone the repository:**
+   ```bash
+   git clone [your-repository-url]
+   cd [project-directory]
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Install required packages:**
+   ```bash
+   npm install react lucide-react
+   ```
 
-### `npm test`
+## Project Structure
+```
+src/
+├── components/
+│   └── DynamicTable.js
+├── assets/
+│   └── img1.jpg
+├── styles/
+│   └── main.css
+└── App.js
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
+1. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm run build`
+2. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   This creates an optimized production build in the `build` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features Guide
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Adding Variants
+- Click the '+' button in the last column to add a new variant column
+- Each variant can have its own image and name
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Managing Rows
+- Click the '+' button at the bottom to add a new row
+- Drag rows to reorder them
+- Delete rows using the trash icon (except the first row)
 
-### `npm run eject`
+### Product Filters
+- Click "Add Product Filter" to add filters to each row
+- Enter filter text in the prompt
+- Filters are displayed as tags in the Product Filter column
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Image Management
+- Click the image placeholder to upload an image for each variant
+- Supported formats: JPG, PNG, GIF
+- Image name is displayed below the uploaded image
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Variant Management
+- Click the vertical dots menu to show delete option for variants
+- Primary variant cannot be deleted
+- Deleting a variant will remove that column from all rows
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Support
+For support, please open an issue in the GitHub repository or contact [your-contact-info].
