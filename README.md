@@ -1,6 +1,10 @@
 # Dynamic Table with Variant Management
 A React-based dynamic table interface for managing product variants. This project allows users to manage product variants with features like drag-and-drop rows and image uploads.
 
+## Live Demo Link
+Go : [https://retainiq-dynamic-table.netlify.app/](https://retainiq-dynamic-table.netlify.app/)
+
+
 ## Features
 - Dynamic variant column management
 - Drag and drop row reordering
@@ -17,8 +21,8 @@ Before you begin, ensure you have installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Bhargav090/RetainIQ-.git]
-   cd [RetainIQ]
+   git clone https://github.com/Bhargav090/RetainIQ.git
+   cd RetainIQ
    ```
 
 2. **Install dependencies:**
