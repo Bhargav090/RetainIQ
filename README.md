@@ -1,11 +1,10 @@
 # Dynamic Table with Variant Management
-A React-based dynamic table interface for managing product variants. This project allows users to manage product variants with features like drag-and-drop rows, image uploads, and filter management.
+A React-based dynamic table interface for managing product variants. This project allows users to manage product variants with features like drag-and-drop rows and image uploads.
 
 ## Features
 - Dynamic variant column management
 - Drag and drop row reordering
 - Image upload for variants
-- Product filter management
 - Add/delete rows and variants
 - Interactive UI with modern design
 
@@ -18,8 +17,8 @@ Before you begin, ensure you have installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone [your-repository-url]
-   cd [project-directory]
+   git clone [https://github.com/Bhargav090/RetainIQ-.git]
+   cd [RetainIQ]
    ```
 
 2. **Install dependencies:**
@@ -31,18 +30,6 @@ Before you begin, ensure you have installed:
    ```bash
    npm install react lucide-react
    ```
-
-## Project Structure
-```
-src/
-├── components/
-│   └── DynamicTable.js
-├── assets/
-│   └── img1.jpg
-├── styles/
-│   └── main.css
-└── App.js
-```
 
 ## Usage
 1. **Start the development server:**
@@ -66,16 +53,12 @@ src/
 ### Managing Rows
 - Click the '+' button at the bottom to add a new row
 - Drag rows to reorder them
-- Delete rows using the trash icon (except the first row)
+- Delete rows using the trash icon.
 
-### Product Filters
-- Click "Add Product Filter" to add filters to each row
-- Enter filter text in the prompt
-- Filters are displayed as tags in the Product Filter column
 
 ### Image Management
 - Click the image placeholder to upload an image for each variant
-- Supported formats: JPG, PNG, GIF
+- Supported formats: JPG, PNG, Svg.
 - Image name is displayed below the uploaded image
 
 ### Variant Management
@@ -83,15 +66,3 @@ src/
 - Primary variant cannot be deleted
 - Deleting a variant will remove that column from all rows
 
-## Contributing
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-## Support
-For support, please open an issue in the GitHub repository or contact [your-contact-info].
